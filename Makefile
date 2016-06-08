@@ -26,7 +26,7 @@ build: submodule
 	rm -rf $(BUILD_DIR)
 	cp -R upstream $(BUILD_DIR)
 	touch $(BUILD_DIR)/ChangeLog
-	cd $(BUILD_DIR) && autoreconf -i
+	cd $(BUILD_DIR) && autoreconf -i --force
 	cd $(BUILD_DIR) && CC=musl-gcc CFLAGS='$(CFLAGS)' ./configure
 	cd $(BUILD_DIR) && make DESTDIR=$(RELEASE_DIR) install
 	mkdir -p $(RELEASE_DIR)/usr/share/licenses/$(PACKAGE)

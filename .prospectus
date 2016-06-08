@@ -1,7 +1,7 @@
 item do
   expected do
     url_xpath
-    url 'http://git.savannah.gnu.org/cgit/sed.git/refs/tags'
+    url 'http://git.savannah.gnu.org/cgit/libidn.git/refs/tags'
     xpath '//*[@id="cgit"]/div/table/tr[2]/td[1]/a'
     regex /^libidn-(\d+).(\d+)$/, '\1.\2'
   end

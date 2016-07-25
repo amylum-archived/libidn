@@ -19,10 +19,10 @@ build_container:
 submodule:
 	git submodule update --init
 
-manual: submodule
+manual: build_container submodule
 	./meta/launch /bin/bash || true
 
-container:
+container: build_container
 	./meta/launch
 
 build: submodule

@@ -25,7 +25,7 @@ container:
 build: submodule
 	rm -rf $(BUILD_DIR)
 	cp -R upstream $(BUILD_DIR)
-	touch $(BUILD_DIR)/ChangeLog
+	touch $(BUILD_DIR)/ChangeLog $(BUILD_DIR)/doc/Makefile.gdoc
 	cd $(BUILD_DIR) && autoreconf -i --force
 	cd $(BUILD_DIR) && CC=musl-gcc CFLAGS='$(CFLAGS)' ./configure
 	cd $(BUILD_DIR) && make DESTDIR=$(RELEASE_DIR) install

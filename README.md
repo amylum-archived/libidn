@@ -1,6 +1,8 @@
 libidn
 ==========
 
+[![Build Status](https://img.shields.io/circleci/project/amylum/libidn/master.svg)](https://circleci.com/gh/amylum/libidn)
+[![GitHub release](https://img.shields.io/github/release/amylum/libidn.svg)](https://github.com/amylum/libidn/releases)
 [![LGPL Licensed](http://img.shields.io/badge/license-LGPL-green.svg)](https://tldrlegal.com/license/gnu-lesser-general-public-license-v2.1-(lgpl-2.1))
 
 Package repo for [libidn](http://www.gnu.org/software/libidn/)

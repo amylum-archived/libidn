@@ -1,0 +1,22 @@
+name 'libidn'
+org 'amylum'
+
+licenses 'COPYING.LESSERv3'
+
+configure_flags(
+  prefix: '/usr'
+)
+
+harden
+
+build do
+  run 'touch ChangeLog doc/Makefile.gdoc'
+  run 'autoreconf -i --force'
+  configure
+  make
+  install
+end
+
+test do
+  # TODO: tests
+end

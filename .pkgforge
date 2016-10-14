@@ -7,7 +7,7 @@ configure_flags(
   prefix: '/usr'
 )
 
-cflags(['-Wnoerror=format-security'])
+cflags(['-Wno-error=format-security'])
 harden
 
 build do

@@ -10,9 +10,10 @@ configure_flags(
 harden
 cflags(['-Wno-error=format-security'])
 
+patch 'e31265be5ebf7c810d2adc1969e947e0f9b3dd25.patch'
+
 build do
-  run 'touch ChangeLog doc/Makefile.gdoc'
-  run 'autoreconf -i --force'
+  run 'make autoreconf'
   configure
   make
   install

@@ -1,7 +1,7 @@
 libidn
 ==========
 
-[![Build Status](https://img.shields.io/circleci/project/amylum/libidn/master.svg)](https://circleci.com/gh/amylum/libidn)
+[![Build Status](https://img.shields.io/travis/com/amylum/libidn.svg)](https://travis-ci.com/amylum/libidn)
 [![GitHub release](https://img.shields.io/github/release/amylum/libidn.svg)](https://github.com/amylum/libidn/releases)
 [![LGPL Licensed](http://img.shields.io/badge/license-LGPL-green.svg)](https://tldrlegal.com/license/gnu-lesser-general-public-license-v2.1-(lgpl-2.1))
 
